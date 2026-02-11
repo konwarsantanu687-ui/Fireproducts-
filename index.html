@@ -1,49 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>🔥 FireProducts</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireProducts🔥</title>
+
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background: #111;
+            background: #000;
             color: white;
-            padding: 15px;
+            padding: 15px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: sticky;
-            top: 0;
         }
 
         header h1 {
             margin: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
         }
 
         nav a {
             color: white;
-            margin: 0 12px;
+            margin-left: 20px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
         }
 
         nav a:hover {
-            color: orange;
-        }
-
-        section {
-            padding: 40px 20px;
+            color: #ff6600;
         }
 
         .hero {
-            text-align: center;
-            background: linear-gradient(to right, orange, red);
+            background: linear-gradient(to right, #ff6600, #ff3300);
             color: white;
+            text-align: center;
             padding: 60px 20px;
+        }
+
+        .hero h2 {
+            margin: 0 0 10px;
+            font-size: 32px;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        h2.section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 26px;
         }
 
         .products {
@@ -51,157 +66,172 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 25px;
-            margin-top: 20px;
         }
 
         .product-card {
             background: white;
-            width: 220px;
-            padding: 15px;
+            width: 230px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 15px;
             text-align: center;
-            transition: transform 0.2s;
+            transition: 0.2s ease;
         }
 
         .product-card:hover {
-            transform: scale(1.05);
+            transform: translateY(-5px);
         }
 
         .product-card img {
             width: 100%;
             height: 200px;
-            object-fit: contain;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0 5px;
+            font-size: 16px;
         }
 
         .btn {
             display: inline-block;
             margin-top: 10px;
-            padding: 8px 12px;
-            background: orange;
+            padding: 8px 14px;
+            background: #ff6600;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 14px;
         }
 
         .btn:hover {
-            background: red;
-        }
-
-        h2 {
-            text-align: center;
+            background: #e05500;
         }
 
         footer {
-            background: #111;
+            background: #000;
             color: white;
             text-align: center;
             padding: 15px;
-            margin-top: 30px;
+            margin-top: 40px;
+            font-size: 14px;
         }
+
+        .light-bg { background: #fff7f2; }
+        .soft-bg { background: #f9f9ff; }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>🔥 FireProducts</h1>
+    <h1>🔥 FireProducts Fashion</h1>
     <nav>
-        <a href="#low">Low Price</a>
-        <a href="#luxury">Luxury</a>
-        <a href="#boys">Boy Fashion</a>
-        <a href="#girls">Girl Fashion</a>
+        <a href="#girls-low">Girls Low</a>
+        <a href="#girls-lux">Girls Luxury</a>
+        <a href="#boys-low">Boys Low</a>
+        <a href="#boys-lux">Boys Luxury</a>
     </nav>
 </header>
 
-<section class="hero">
-    <h2>Hot Deals. Stylish Feels.</h2>
-    <p>Your one-stop shop for budget and luxury fashion</p>
-</section>
+<div class="hero">
+    <h2>Trendy Fashion for Everyone</h2>
+    <p>Affordable & Luxury Styles in One Place</p>
+</div>
 
-<!-- LOW PRICE -->
-<section id="low">
-    <h2>💰 Low Price Products</h2>
+<!-- GIRLS LOW PRICE -->
+<section id="girls-low" class="light-bg">
+    <h2 class="section-title">👗 Girls Fashion – Low Price</h2>
     <div class="products">
         <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg">
-            <h3>Wireless Mouse</h3>
-            <p>Affordable & useful</p>
-            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
+            <h3>Makeup Kit</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
         </div>
-
         <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/71K9CbNZPsL._SL1500_.jpg">
-            <h3>LED Desk Lamp</h3>
-            <p>Energy saving light</p>
-            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348">
+            <h3>Skincare Set</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+            <h3>Casual Dress</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
         </div>
     </div>
 </section>
 
-<!-- LUXURY -->
-<section id="luxury" style="background:#fff8f0;">
-    <h2>💎 Luxury Products</h2>
+<!-- GIRLS LUXURY -->
+<section id="girls-lux">
+    <h2 class="section-title">💎 Girls Fashion – Luxury</h2>
     <div class="products">
         <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg">
+            <img src="https://images.unsplash.com/photo-1520975922203-b6b6f4f3a5f3">
+            <h3>Luxury Makeup Set</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9">
+            <h3>Premium Skincare</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae">
+            <h3>Designer Dress</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
+        </div>
+    </div>
+</section>
+
+<!-- BOYS LOW PRICE -->
+<section id="boys-low" class="soft-bg">
+    <h2 class="section-title">👕 Boys Fashion – Low Price</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1520974735194-3f1f1b5b9f76">
+            <h3>Casual T-Shirt</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c">
+            <h3>Simple Watch</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
+        </div>
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+            <h3>Casual Shoes</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
+        </div>
+    </div>
+</section>
+
+<!-- BOYS LUXURY -->
+<section id="boys-lux">
+    <h2 class="section-title">⌚ Boys Fashion – Luxury</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30">
             <h3>Luxury Watch</h3>
-            <p>Premium design</p>
-            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
         </div>
-
         <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/61R8AIxWcUL._SL1500_.jpg">
-            <h3>Wireless Headphones</h3>
-            <p>Luxury sound</p>
-            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+            <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475">
+            <h3>Designer Shirt</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
         </div>
-    </div>
-</section>
-
-<!-- BOY FASHION -->
-<section id="boys">
-    <h2>👕 Boy Fashion</h2>
-    <div class="products">
         <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/61-jBuhtgZL._UY741_.jpg">
-            <h3>Men's Casual Shirt</h3>
-            <p>Stylish everyday wear</p>
-            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
-        </div>
-
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/71kWymZ+c+L._UY741_.jpg">
-            <h3>Men's Sneakers</h3>
-            <p>Trendy & comfortable</p>
-            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
-        </div>
-    </div>
-</section>
-
-<!-- GIRL FASHION -->
-<section id="girls" style="background:#fff0f6;">
-    <h2>👗 Girl Fashion</h2>
-    <div class="products">
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/71sKQK9C1kL._UY741_.jpg">
-            <h3>Women's Stylish Dress</h3>
-            <p>Elegant and trendy</p>
-            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
-        </div>
-
-        <div class="product-card">
-            <img src="https://m.media-amazon.com/images/I/61G9o8I6cNL._UY741_.jpg">
-            <h3>Women's Handbag</h3>
-            <p>Fashionable accessory</p>
-            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+            <img src="https://images.unsplash.com/photo-1514996937319-344454492b37">
+            <h3>Premium Shoes</h3>
+            <a href="mailto:konwarsantanu687@gmail.com" class="btn">Email to Buy</a>
         </div>
     </div>
 </section>
 
 <footer>
-    © 2026 FireProducts | Demo Store | Not affiliated with Amazon
+    © 2026 FireProducts Fashion | Contact: konwarsantanu687@gmail.com
 </footer>
 
 </body>
-  </html>
+</html>
+
   
