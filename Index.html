@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🔥 FireProducts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: orange;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            background: linear-gradient(to right, orange, red);
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background: white;
+            width: 220px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: red;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🔥 FireProducts</h1>
+    <nav>
+        <a href="#low">Low Price</a>
+        <a href="#luxury">Luxury</a>
+        <a href="#boys">Boy Fashion</a>
+        <a href="#girls">Girl Fashion</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hot Deals. Stylish Feels.</h2>
+    <p>Your one-stop shop for budget and luxury fashion</p>
+</section>
+
+<!-- LOW PRICE -->
+<section id="low">
+    <h2>💰 Low Price Products</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61LtuGzXeaL._AC_SL1500_.jpg">
+            <h3>Wireless Mouse</h3>
+            <p>Affordable & useful</p>
+            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71K9CbNZPsL._SL1500_.jpg">
+            <h3>LED Desk Lamp</h3>
+            <p>Energy saving light</p>
+            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+        </div>
+    </div>
+</section>
+
+<!-- LUXURY -->
+<section id="luxury" style="background:#fff8f0;">
+    <h2>💎 Luxury Products</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71TPda7cwUL._SL1500_.jpg">
+            <h3>Luxury Watch</h3>
+            <p>Premium design</p>
+            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61R8AIxWcUL._SL1500_.jpg">
+            <h3>Wireless Headphones</h3>
+            <p>Luxury sound</p>
+            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+        </div>
+    </div>
+</section>
+
+<!-- BOY FASHION -->
+<section id="boys">
+    <h2>👕 Boy Fashion</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61-jBuhtgZL._UY741_.jpg">
+            <h3>Men's Casual Shirt</h3>
+            <p>Stylish everyday wear</p>
+            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71kWymZ+c+L._UY741_.jpg">
+            <h3>Men's Sneakers</h3>
+            <p>Trendy & comfortable</p>
+            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+        </div>
+    </div>
+</section>
+
+<!-- GIRL FASHION -->
+<section id="girls" style="background:#fff0f6;">
+    <h2>👗 Girl Fashion</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/71sKQK9C1kL._UY741_.jpg">
+            <h3>Women's Stylish Dress</h3>
+            <p>Elegant and trendy</p>
+            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/61G9o8I6cNL._UY741_.jpg">
+            <h3>Women's Handbag</h3>
+            <p>Fashionable accessory</p>
+            <a href="https://www.amazon.in" target="_blank" class="btn">Buy on Amazon</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 FireProducts | Demo Store | Not affiliated with Amazon
+</footer>
+
+</body>
+  </html>
+  
